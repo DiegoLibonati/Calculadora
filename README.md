@@ -15,3 +15,7 @@ Calculadora en Python. Esta misma cuenta con:
 11. Sacar el porcentaje y poder operar con el mismo.
 12. Calcular reciproc
 13. Utilizar la coma. (Una sola vez, cada vez que se presiona una operacion permite utilizarla de nuevo.)
+
+NEW VERSION. 0.2
+14. Se removio el color ROJO de fondo del boton borrar digito
+15. Ahora se puede calcular la potencia de un numero y operar con el mismo
