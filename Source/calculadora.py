@@ -373,6 +373,13 @@ hola3=0
 def cuadrada(num):
 	hola3=math.sqrt(float(num))
 	numeroPantalla.set(hola3)
+
+def potencia(num):
+	global resultado
+
+	resultado=float(num)*float(num)
+
+	numeroPantalla.set(resultado)
 	
 
 # 1RA FILA
@@ -380,8 +387,8 @@ def cuadrada(num):
 
 # 2DA FILA
 
-botonBorrar=Button(miFrame, width=22, height=36, text="",bg="red", image=foto, command=borrarDigito)
-botonBorrar.grid(row=3, column=1, padx=3, pady=3)
+botonBorrar=Button(miFrame, width=25, height=36, text="", image=foto, command=borrarDigito, padx=3, pady=3)
+botonBorrar.grid(row=3, column=1)
 
 botonCe=Button(miFrame, text="Ce", width=3, height=2,bg="red", command=operacionCE)
 botonCe.grid(row=3, column=2)
@@ -389,6 +396,9 @@ botonCe.config(state="disabled")
 
 botonC=Button(miFrame, text="C", width=3, height=2,bg="red", command=lambda:c(numeroPantalla.get()))
 botonC.grid(row=3, column=3)
+
+botonPotencia=Button(miFrame, text="x2", width=3, height=2,bg="#00aae4", command=lambda:potencia(numeroPantalla.get()))
+botonPotencia.grid(row=3, column=4)
 
 botonCuad=Button(miFrame, width=6, height=2, text="R",bg="#00aae4", command=lambda:cuadrada(numeroPantalla.get()))
 botonCuad.grid(row=3, column=5)
