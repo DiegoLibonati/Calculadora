@@ -37,7 +37,7 @@
 
 <br>
 <h2 align="left">
-  Contact=
+  CONTACT
 </h2>
 <br/>
 
